@@ -1,6 +1,8 @@
 {
   "name": "F2RT",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "pro_id": "e959fe03"
 }
