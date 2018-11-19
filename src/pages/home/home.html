@@ -1,15 +1,26 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-header class="center header">
+
+  <div class="icon-container" (click)="openMenu()">
+    <ion-icon class="icon-menu" name="menu"></ion-icon>
+  </div>
+
+  <div class="icon-container">
+    <img src="https://storage.googleapis.com/f2rt-assets/Iconos/Ico_Menu.svg" class="icon icon-menu">
+  </div>
+
+  <div class="icon-container">
+    <ion-badge class="center number-badge">9</ion-badge>
+    <img src="https://storage.googleapis.com/f2rt-assets/Iconos/IcoNotification.svg" class="icon icon-notification">
+  </div>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-  <button ion-button block class="btn-login" (click)="logout()">Iniciar Sesión</button>
+<ion-content class="body-home">
+
+  <ion-list>
+    <ion-item no-padding no-margin no-lines *ngFor="let machine of listMachines">
+        <machine></machine>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
+

@@ -24,13 +24,6 @@ export class LoginPage {
     private _authService: AuthServiceProvider
   ) {}
 
-  ionViewDidLoad() {
-    this._authService.authenticated().then( (result) => {
-      console.log('rl: ',result);
-      if(result) this._navCtrl.setRoot(HomePage);
-    });
-  }
-
   login(): void{
     this._authService.login();
     this._navCtrl.setRoot(HomePage);

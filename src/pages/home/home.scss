@@ -1,3 +1,42 @@
-page-home {
+.header{
+  height: 100px;
+  padding: 0 30px;
+  justify-content: space-between;
+  background-color: $color6;
 
+  .icon-container{
+    width: fit-content;
+    position: relative;
+
+    .icon-menu{
+      font-size: 2.7rem;
+      color: white;
+    }
+
+    .icon {
+      height: 25px;
+    }
+    .number-badge{
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      border-radius: 1rem;
+      padding: 2px 5px;
+      background-color: white;
+      border: 2px solid $color8;
+      color: $color6;
+    }
+  }
+}
+
+.body-home{
+  padding-top: 0 !important;
+}
+
+ion-label{
+  margin: 0 !important;
+}
+
+.item-inner {
+  padding: 0 !important;
 }
